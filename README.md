@@ -66,3 +66,10 @@ The above copyright notice and this permission notice shall be included in all c
 <br><br>
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 </p>
+
+## Other projects
+
+<ul>
+    <li><a href="https://codecanyon.net/item/jquery-forms-elegant-elements/18656657?ref=jablonczay" target="_blank" title="Elegant Elements – jQuery HTML Form Plugin">Elegant Elements – jQuery HTML Form Plugin</a></li>
+    <li><a href="https://audiojungle.net/user/jablonczay/portfolio" target="_blank" title="Royalty free sounds">AudioJungle</a></li>
+</ul>
