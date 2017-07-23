@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Code Box Copy</title>
+
+        <!-- Cod Box Copy begin -->
+        <link href="prism/prism.min.css" rel="stylesheet">
+        <link href="code-box-copy/css/code-box-copy.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="prism/prism.min.js"></script>
+        <script src="clipboard/clipboard.min.js"></script>
+        <script src="code-box-copy/js/code-box-copy.js"></script>
+        <!-- Cod Box Copy end -->
+        
+        <style>
+            body { margin: 0; padding: 0; background-color: #fff; font-family: sans-serif; color: #333; font-size: 100%; line-height: 1.5; }
+            .container { width: 960px; max-width: 100%; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+            h1 { margin: 0; padding: 1em 0; font-size: 32px; font-weight: normal; text-align: center; color: #fff; }
+            h2 { margin: 2em 0 1.5em 0; padding: 0 0 0.15em 0; font-size: 26px; font-weight: bold; border-bottom: 3px solid #eee; }
+            h3 { margin: 2em 0 0.5em 0; padding: 0; font-size: 20px; font-weight: bold; }
+            p { margin: 2em 0 1em 0; padding: 0; }
+            h3 + p { margin-top: 0.5em; }
+            ul { margin: 0 0 0 1.25em; padding: 0; line-height: 1.875; }
+            a { text-decoration: none; color: #07a; padding: 5px 6px; background-color: #f5f5f5; -webkit-transition: background-color 0.2s linear; transition: background-color 0.2s linear; }
+            a:hover { text-decoration: none; background-color: #07a; color: #fff; }
+            .header { background-color: #257; -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.05); box-shadow: 0 0 50px rgba(0, 0, 0, 0.05); }
+            .main { padding-top: 3em; padding-bottom: 6em; }
+            .footer { padding: 2em 1em 1.25em 1em; background-color: #f5f5f5; border-top: 1px solid #eee; text-align: center; }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1>Code Box Copy</h1>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="container">
+
+                <h2>What is this?</h2>
+
+                <p>
+                    Code Box Copy is a lightweight, flexible syntax highlighter jQuery plugin,
+                    that provides easy to use, simple method to copy any text to the clipboard with a single click.
+                </p>
+    
+                <h2>Usage</h2>
+
+                <h3>Sources</h3>
+                
+                <p>Put the following lines below to the head section. Do not forget to use the copy function :)</p>
+                
+                <div class="code-box-copy">
+                    <button class="code-box-copy__btn" data-clipboard-target="#example-head" title="Copy"></button>
+                    <pre><code class="language-html" id="example-head">&lt;!-- Cod Box Copy begin --&gt;
+&lt;link href=&quot;prism/prism.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;code-box-copy/css/code-box-copy.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;prism/prism.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;clipboard/clipboard.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;code-box-copy/js/code-box-copy.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Cod Box Copy end --&gt;</code></pre>
+                </div>
+                
+                <h3>Content you want to copy</h3>
+
+                <p>Test it with a simple HTML code like below:</p>
+                <div class="code-box-copy">
+                    <button class="code-box-copy__btn" data-clipboard-target="#example-html" title="Copy"></button>
+
+                    <pre><code class="language-html" id="example-html">&lt;div class=&quot;code-box-copy&quot;&gt;
+    &lt;button class=&quot;code-box-copy__btn&quot; data-clipboard-target=&quot;#example-html&quot; title=&quot;Copy&quot;&gt;&lt;/button&gt;
+    &lt;pre&gt;&lt;code class=&quot;language-html&quot; id=&quot;example-html&quot;&gt;&amp;lt;div class=&amp;quot;example&amp;quot;&amp;gt;
+        Lorem ipsum
+    &amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+
+
+                <h3>Plugin initialization</h3>
+
+                <p>Put in the head section the plugin initialization's code or in the end of the body section:</p>
+                <div class="code-box-copy">
+                    <button class="code-box-copy__btn" data-clipboard-target="#example-initialization" title="Copy"></button>
+                    <pre><code class="language-js" id="example-initialization">&lt;script&gt;
+$(document).ready(function () {
+    $('.code-box-copy').codeBoxCopy();
+});
+&lt;/script&gt;</code></pre>
+                </div>
+
+                <p>Plugin initialization with parameters:</p>
+                
+                <div class="code-box-copy">
+                    <button class="code-box-copy__btn" data-clipboard-target="#example-initialization-with-parameters" title="Copy"></button>
+                    <pre><code class="language-js" id="example-initialization-with-parameters">&lt;script&gt;
+$(document).ready(function () {
+    $('.code-box-copy').codeBoxCopy({
+        tooltipText: 'Copied',
+        tooltipShowTime: 1000,
+        tooltipFadeInTime: 300,
+        tooltipFadeOutTime: 300
+    });
+});
+&lt;/script&gt;</code></pre>
+                </div>
+                
+                <h3>Parameters</h3>
+                <ul>
+                    <li>tooltipText {string} | Default value: 'Copied'. – text of the tooltip when the user click to the copy button</li>
+                    <li>tooltipShowTime {number} | Default value: 1000. – the time (in milliseconds) until the tooltip appears after fade in and before the fade out</li>
+                    <li>tooltipFadeInTime {number} | Default value: 300. – the fade in time (in milliseconds) until the tooltip appears</li>
+                    <li>tooltipFadeOutTime {number} | Default value: 300. – the fade in time (in milliseconds) until the tooltip disappears</li>
+                </ul>
+                
+                <h2>Third-party libraries (MIT Licence)</h2>
+                <ul>
+                    <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+                    <li><a href="http://prismjs.com/" target="_blank">Prism</a></li>
+                    <li><a href="https://clipboardjs.com/" target="_blank">clipboard.js</a></li>
+                </ul>
+
+                <h3>HTML Example</h3>
+                <div class="code-box-copy">
+                    <button class="code-box-copy__btn" data-clipboard-target="#code-box-copy-1" title="Copy"></button>
+                    <pre><code class="language-html" id="code-box-copy-1">&lt;div class=&quot;my-class&quot;&gt;
+    &lt;span&gt;Lorem ipsum&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+
+                <h3>CSS Example</h3>
+                <div class="code-box-copy">
+                    <button class="code-box-copy__btn" data-clipboard-target="#code-box-copy-2" title="Copy"></button>
+                    <pre><code class="language-css" id="code-box-copy-2">.my-class {
+    display: flex;
+    align-items: center;
+    background-color: #c5c5c5;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: normal;
+}</code></pre>
+                </div>
+
+                <h3>JavaScript Example</h3>
+                <div class="code-box-copy">
+                    <button class="code-box-copy__btn" data-clipboard-target="#code-box-copy-3" title="Copy"></button>
+                    <pre><code class="language-js" id="code-box-copy-3">window.addEventListener('resize', function () {
+    console.log('Lorem ipsum');    
+});</code></pre>
+                </div>
+
+                <h3>Full Example</h3>
+                <div class="code-box-copy">
+                    <button class="code-box-copy__btn" data-clipboard-target="#example-full" title="Copy"></button>
+                    <pre><code class="language-js" id="example-full">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;Code Box Copy &ndash; Full Example&lt;/title&gt;
+        &lt;!-- Cod Box Copy begin --&gt;
+        &lt;link href=&quot;prism/prism.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+        &lt;link href=&quot;code-box-copy/css/code-box-copy.css&quot; rel=&quot;stylesheet&quot;&gt;
+        &lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;prism/prism.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;clipboard/clipboard.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;code-box-copy/js/code-box-copy.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Cod Box Copy end --&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;code-box-copy&quot;&gt;
+            &lt;button class=&quot;code-box-copy__btn&quot; data-clipboard-target=&quot;#example-full&quot; title=&quot;Copy&quot;&gt;&lt;/button&gt;
+            &lt;pre&gt;&lt;code class=&quot;language-html&quot; id=&quot;example-full&quot;&gt;&amp;lt;div class=&amp;quot;my-class&amp;quot;&amp;gt;
+    &amp;lt;span&amp;gt;Lorem ipsum&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+        &lt;/div&gt;
+                        
+       &lt;script&gt;
+            $('.code-box-copy').codeBoxCopy({
+                tooltipText: 'Copied',
+                tooltipShowTime: 1000,
+                tooltipFadeInTime: 300,
+                tooltipFadeOutTime: 300
+            });
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+
+                <h2>Licence</h2>
+                <h3>The MIT Licence</h3>
+                <p>
+                    Copyright 2017 © <a href="https://jablonczay.com" target="_blank">jablonczay.com</a>
+                    <br><br>
+                    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+                    <br><br>
+                    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+                    <br><br>
+                    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+                </p>
+
+                <h2>Other projects</h2>
+                <ul>
+                    <li><a href="https://codecanyon.net/item/jquery-forms-elegant-elements/18656657?ref=jablonczay" target="_blank" title="Elegant Elements – jQuery HTML Form Plugin">Elegant Elements – jQuery HTML Form Plugin</a></li>
+                    <li><a href="https://audiojungle.net/user/jablonczay/portfolio" target="_blank" title="Royalty free sounds">AudioJungle</a></li>
+                </ul>
+
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="container">
+                <a href="https://jablonczay.com" title="jablonczay.com" target="_blank">jablonczay.com</a>
+            </div>
+        </div>
+
+        <script>
+            $('.code-box-copy').codeBoxCopy({
+                tooltipText: 'Copied',
+                tooltipShowTime: 1000,
+                tooltipFadeInTime: 300,
+                tooltipFadeOutTime: 300
+            });
+        </script>
+    </body>
+</html>
