@@ -43,7 +43,8 @@ Put in the head section the plugin initialization's code or in the end of the bo
 
 Plugin initialization with parameters:
 
-```html<script>
+```html
+<script>
 $('.code-box-copy').codeBoxCopy({
     tooltipText: 'Copied',
     tooltipShowTime: 1000,
