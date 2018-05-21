@@ -26,9 +26,9 @@ Test it with a simple HTML code like below:
 ```html
 <div class="code-box-copy">
     <button class="code-box-copy__btn" data-clipboard-target="#example-html" title="Copy"></button>
-    <pre><code class="language-html" id="example-html">&amp;lt;div class=&amp;quot;example&amp;quot;&amp;gt;
+    <pre><code class="language-html" id="example-html"><div class="example">
     Lorem ipsum
-&amp;lt;/div&amp;gt;</code></pre>
+</div></code></pre>
 </div>
 ```
 <h2>Plugin initialization</h2>
