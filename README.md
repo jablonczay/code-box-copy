@@ -25,9 +25,9 @@ Test it with a simple HTML code like below:
 
 ```html
 <div class="code-box-copy">
-&nbsp;&nbsp;&nbsp;&nbsp;<button class="code-box-copy__btn" data-clipboard-target="#example-html" title="Copy"></button>
-&nbsp;&nbsp;&nbsp;&nbsp;<pre><code class="language-html" id="example-html">&amp;lt;div class=&amp;quot;example&amp;quot;&amp;gt;
-&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum
+    <button class="code-box-copy__btn" data-clipboard-target="#example-html" title="Copy"></button>
+    <pre><code class="language-html" id="example-html">&amp;lt;div class=&amp;quot;example&amp;quot;&amp;gt;
+    Lorem ipsum
 &amp;lt;/div&amp;gt;</code></pre>
 </div>
 ```
