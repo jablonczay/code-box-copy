@@ -9,14 +9,14 @@ Code Box Copy is a lightweight, flexible syntax highlighter jQuery plugin, that 
 Put the following lines below to the head section.
 
 ```html
-<pre>&lt;!-- Cod Box Copy begin --&gt;
-&lt;link href="prism/prism.min.css" rel="stylesheet"&gt;
-&lt;link href="code-box-copy/css/code-box-copy.css" rel="stylesheet"&gt;
-&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
-&lt;script src="prism/prism.min.js"&gt;&lt;/script&gt;
-&lt;script src="clipboard/clipboard.min.js"&gt;&lt;/script&gt;
-&lt;script src="code-box-copy/js/code-box-copy.js"&gt;&lt;/script&gt;
-&lt;!-- Cod Box Copy end --&gt;</pre>
+<!-- Cod Box Copy begin -->
+<link href="prism/prism.min.css" rel="stylesheet">
+<link href="code-box-copy/css/code-box-copy.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="prism/prism.min.js"></script>
+<script src="clipboard/clipboard.min.js"></script>
+<script src="code-box-copy/js/code-box-copy.js"&gt;&lt;/script>
+<!-- Cod Box Copy end -->
 ```
 
 <h2>Content you want to copy</h2>
