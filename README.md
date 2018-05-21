@@ -15,7 +15,7 @@ Put the following lines below to the head section.
 <script src="js/jquery.min.js"></script>
 <script src="prism/prism.min.js"></script>
 <script src="clipboard/clipboard.min.js"></script>
-<script src="code-box-copy/js/code-box-copy.js"&gt;&lt;/script>
+<script src="code-box-copy/js/code-box-copy.js"></script>
 <!-- Cod Box Copy end -->
 ```
 
