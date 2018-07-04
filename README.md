@@ -76,6 +76,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <h2>Other projects</h2>
 
+- [GDPR Cookie Law – GDPR Cookie Compliance jQuery Plugin](https://codecanyon.net/item/gdpr-cookie-law/22061612?ref=jablonczay)
 - [Elegant Elements – jQuery HTML Form Plugin](https://codecanyon.net/item/jquery-forms-elegant-elements/18656657?ref=jablonczay)
 - [AudioJungle – Royalty free sounds](https://audiojungle.net/user/jablonczay/portfolio)
 - [Responsive Testimonals for jQuery](https://github.com/jablonczay/responsive-testimonals-for-jquery/)
