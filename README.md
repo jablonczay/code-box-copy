@@ -80,3 +80,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 - [Elegant Elements – jQuery HTML Form Plugin](https://codecanyon.net/item/jquery-forms-elegant-elements/18656657?ref=jablonczay)
 - [AudioJungle – Royalty free sounds](https://audiojungle.net/user/jablonczay/portfolio)
 - [Responsive Testimonals for jQuery](https://github.com/jablonczay/responsive-testimonals-for-jquery/)
+- [Scroll Styler – Free Wordpress Plugin](https://wordpress.org/plugins/scroll-styler/)
