@@ -61,7 +61,7 @@ $('.code-box-copy').codeBoxCopy({
 - tooltipFadeInTime {number} | Default value: 300. – the fade in time (in milliseconds) until the tooltip appears
 - tooltipFadeOutTime {number} | Default value: 300. – the fade in time (in milliseconds) until the tooltip disappears
 
-<h2>License</h2>
+<h2>License – MIT</h2>
 
 Copyright 2017 © https://jablonczay.com
 
