@@ -26,7 +26,7 @@ Add the following lines below to your page head:
 <!-- Cod Box Copy end -->
 ```
 
-#### CDN: jsDelivr
+### CDN: jsDelivr
 
 Alternatively, you can load the required scripts via CDN:
 
