@@ -105,5 +105,3 @@ You may also add optional parameters:
 - [Responsive Testimonals for jQuery](https://github.com/jablonczay/responsive-testimonals-for-jquery/)
 - [Scroll Styler – Free Wordpress Plugin](https://wordpress.org/plugins/scroll-styler/)
 - [Royalty-free Photos](https://www.shutterstock.com/g/jablonczay)
-
-[![Analytics](https://ga-beacon.appspot.com/UA-86958415-1/jablonczay/code-box-copy?flat)](https://ga-beacon.appspot.com/)
