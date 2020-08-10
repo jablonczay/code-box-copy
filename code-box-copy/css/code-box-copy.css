@@ -19,8 +19,8 @@
     border: 1px solid #ccc;
     color: #333;
     border-radius: 2px;
-    -webkit-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
 }
 
 .code-box-copy__btn::before {
