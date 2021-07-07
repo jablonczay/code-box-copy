@@ -99,6 +99,7 @@ You may also add optional parameters:
 ## Other Projects
 
 - [Elegant Age Verification – Responsive age-gate plugin for WordPress](https://1.envato.market/ag5YM)
+- [GDPR Cookie Law – Responsive JavaScript GDPR Consent Plugin](https://1.envato.market/qRo6n)
 - [GDPR Cookie Law – GDPR Cookie Compliance jQuery Plugin](https://1.envato.market/50vqn)
 - [Elegant Elements – jQuery HTML Form Plugin](https://1.envato.market/j695n)
 - [AudioJungle – Royalty free sounds](https://audiojungle.net/user/jablonczay/portfolio)
